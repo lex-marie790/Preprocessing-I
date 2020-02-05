@@ -132,5 +132,116 @@ table {
 }
 html,
 body {
-  height: 100%;
+  height: auto;
+  font-family: 'Rubik', sans-serif;
 }
+
+h1, h2, h3 {
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 3%;
+}
+
+h3 {
+  text-align: center;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Nav Menu & Bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  display: flex;
+  margin: 1% 1%;
+  color: black;
+}
+
+nav a:hover {
+  color: palevioletred;
+}
+
+/* Header */
+.header h1 {
+  font-size: 72pt;
+}
+
+.dogs-picture {
+  width: 50vw;
+  float: right;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+}
+
+.about-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+button {
+  border: 2px solid palevioletred;
+  width: 30%;
+  height: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+/* About */
+
+.About {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 10%;
+  text-align: center;
+}
+
+li {
+  padding: 5%;
+}
+
+/* History */
+
+.History {
+  width: 100%;
+}
+
+/* .History h3 {
+  text-align: center;
+} */
