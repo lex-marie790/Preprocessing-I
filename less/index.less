@@ -54,6 +54,193 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	// background-color: red;
 }
 
+html, body {
+	height: auto;
+	font-family: 'Rubik', sans-serif;
+  }
+  
+  h1, h2, h3 {
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 3%;
+  }
+  
+  h3 {
+	text-align: center;
+  }
+  .container {
+	width: 90%;
+	margin: auto;
+  }
+  
+  /* Nav Menu & Bar */
+  
+  .navbar {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 3%;
+  }
+  
+  nav {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+  }
+  
+  nav a {
+	text-decoration: none;
+	display: flex;
+	margin: 1% 1%;
+	color: black;
+  }
+  
+  nav a:hover {
+	color: palevioletred;
+  }
+  
+  @backgroundcolor: #808080;
+
+  /* Header */
+  
+  .header h1 {
+	font-size: 72pt;
+  }
+  
+  .dogs-picture {
+	width: 50vw;
+	// float: right;
+
+		@media (max-width: 500px) {
+			display: none;
+		}
+  }
+  
+  .header {
+	display: flex;
+	justify-content: space-around;
+	width: 90vw;
+	height: 100vh;
+	background-color: @backgroundcolor;
+  }
+  
+//   mix-in
+
+  .displayflex {
+	display: flex;
+	flex-direction: column;
+  }
+
+  .about-contact {
+	.displayflex();
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+  }
+  
+  button {
+	border: 2px solid palevioletred;
+	width: 30%;
+	height: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+  }
+  
+  /* About */
+  
+  .About {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5%;
+	background-color: @backgroundcolor;
+  }
+  
+
+  .left-side {
+	.displayflex();
+	justify-content: center;
+	width: 50%;
+	
+  }
+  
+  .right-side {
+	.displayflex();
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+  }
+  
+  li {
+	padding: 5%;
+  }
+  
+  /* History */
+  
+  .History {
+	width: 100%;
+	margin-top: 5%;
+	background-color: @backgroundcolor;
+  }
+  
+  /* .History h3 {
+	text-align: center;
+  } */
+  
+  table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse:separate;
+	border-spacing:0 15px;
+	border: 1px dashed fuchsia;
+	width: 100%;
+  }
+  
+  th td {
+	border: 1px dashed fuchsia;
+	width:150px; 
+	/* text-align:center;  */
+	padding: 5%;
+  }
+  
+  
+  .experience {
+	table-layout: fixed;
+	width: 100%;
+	text-align: center;
+  }
+  
+  table, th, td {
+	border: 1px dashed gray;
+  }
+  
+  th, tr {
+	padding: 1%;
+  }
+  
+  /* Footer */
+  
+  footer {
+	text-align: center;
+	padding-top: 3%;
+  }
+
+
+  @media (max-width: 500px) {
+  
+	// .dogs-picture {
+	// 	display: none;
+	// }
+
+	.about-contact {
+		width: auto;
+	}
+
+	.left-side p {
+		text-align: center;
+	}
+}

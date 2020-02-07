@@ -1,1 +1,286 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html,
+body {
+  height: auto;
+  font-family: 'Rubik', sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 3%;
+}
+h3 {
+  text-align: center;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+/* Nav Menu & Bar */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  display: flex;
+  margin: 1% 1%;
+  color: black;
+}
+nav a:hover {
+  color: palevioletred;
+}
+/* Header */
+.header h1 {
+  font-size: 72pt;
+}
+.dogs-picture {
+  width: 50vw;
+}
+@media (max-width: 500px) {
+  .dogs-picture {
+    display: none;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+  height: 100vh;
+  background-color: #808080;
+}
+.displayflex {
+  display: flex;
+  flex-direction: column;
+}
+.about-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+button {
+  border: 2px solid palevioletred;
+  width: 30%;
+  height: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+/* About */
+.About {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  background-color: #808080;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+li {
+  padding: 5%;
+}
+/* History */
+.History {
+  width: 100%;
+  margin-top: 5%;
+  background-color: #808080;
+}
+/* .History h3 {
+	text-align: center;
+  } */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  border: 1px dashed fuchsia;
+  width: 100%;
+}
+th td {
+  border: 1px dashed fuchsia;
+  width: 150px;
+  /* text-align:center;  */
+  padding: 5%;
+}
+.experience {
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px dashed gray;
+}
+th,
+tr {
+  padding: 1%;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding-top: 3%;
+}
+@media (max-width: 500px) {
+  .about-contact {
+    width: auto;
+  }
+  .left-side p {
+    text-align: center;
+  }
+}
